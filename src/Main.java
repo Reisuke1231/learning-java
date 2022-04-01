@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -13,8 +14,8 @@ public class Main {
         System.out.println("Choose one of the following: " + choiceOne + ", " + choiceTwo + ", " + choiceThree);
 
         Scanner input = new Scanner(System.in);
-        String userInput = input.next();
-        if (userInput.equals(correctAnswer)) {
+        String userInput = input.next().toLowerCase();
+        if (userInput.equals(correctAnswer.toLowerCase())) {
             System.out.println("Correct!");
         } else {
             System.out.println("Wrong!");
