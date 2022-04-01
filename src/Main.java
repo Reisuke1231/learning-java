@@ -2,26 +2,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int studentAge = 15;
-        double studentGPA = 3.45;
-        boolean hasPerfectAttendance = true;
+        System.out.println("Pick a number between 1 and 10");
+        Scanner scanner = new Scanner(System.in);
 
-        String studentFirstName = "Reisuke";
-        String studentLastName = "H";
-        char studentFirstInitial = studentFirstName.charAt(0);
-        char studentLastInitial = studentLastName.charAt(0);
-        String studentName = "Reisuke H";
+        int inputtedNum = scanner.nextInt();
 
-
-        System.out.println(studentAge);
-        System.out.println(hasPerfectAttendance);
-        System.out.println(studentFirstName + " " + studentLastName + " has a GPA of " + studentGPA);
-
-        System.out.println("What do you want to update it to?");
-
-        Scanner input = new Scanner(System.in);
-        studentGPA = input.nextDouble();
-
-        System.out.println(studentFirstName + " " + studentLastName + " now has a GPA of " + studentGPA);
+        if (inputtedNum < 5) {
+            System.out.println("Enjoy the good luck a frind brings you");
+        } else {
+            System.out.println("Your show selection will make you very happy today");
+        }
     }
 }
