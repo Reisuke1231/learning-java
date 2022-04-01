@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         int studentAge = 15;
@@ -12,11 +14,14 @@ public class Main {
 
 
         System.out.println(studentAge);
-        System.out.println(studentGPA);
-        System.out.println(studentFirstInitial);
-        System.out.println(studentLastInitial);
         System.out.println(hasPerfectAttendance);
-        System.out.println(studentName);
         System.out.println(studentFirstName + " " + studentLastName + " has a GPA of " + studentGPA);
+
+        System.out.println("What do you want to update it to?");
+
+        Scanner input = new Scanner(System.in);
+        studentGPA = input.nextDouble();
+
+        System.out.println(studentFirstName + " " + studentLastName + " now has a GPA of " + studentGPA);
     }
 }
