@@ -2,19 +2,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        String favoriteFood = "pizza";
+        Scanner input = new Scanner(System.in);
+        boolean isOnRepeat = true;
 
-        System.out.println("Pick a number between 1 and 100");
-        Scanner scanner = new Scanner(System.in);
-        int inputtedNum = scanner.nextInt();
+        while (isOnRepeat) {
+            System.out.println("Playing current song");
+            System.out.println("Would you like to take this song off of repeat? If so, answer yes");
+            String userInput = input.next();
 
-        System.out.println(favoriteFood);
-        if (inputtedNum < 100) {
-            favoriteFood = "chicken tacos";
-            System.out.println(favoriteFood);
-        } else {
-            favoriteFood = "steak";
-            System.out.println(favoriteFood);
+            if (userInput.equals("yes")) {
+                isOnRepeat = false;
+            }
         }
+        System.out.println("Playing next song");
     }
 }
