@@ -11,23 +11,21 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println("Input the number of hours you works per week");
-        Scanner inputHours;
-        Scanner inputMoney;
         double hoursPerWeek;
         double moneyPerHour;
 
         do {
-            inputHours = new Scanner(System.in);
+            System.out.println("Input the number of hours you works per week");
+            Scanner inputHours = new Scanner(System.in);
             hoursPerWeek = inputHours.nextDouble();
-        } while (hoursPerWeek < 0);
+        } while (hoursPerWeek <= 0);
 
-        System.out.println("Input the amount of money you makes per hour");
 
         do {
-            inputMoney = new Scanner(System.in);
+            System.out.println("Input the amount of money you makes per hour");
+            Scanner inputMoney = new Scanner(System.in);
             moneyPerHour = inputMoney.nextDouble();
-        } while (moneyPerHour < 0);
+        } while (moneyPerHour <= 0);
 
         double yearlySalary = salaryCalculator(hoursPerWeek, moneyPerHour);
 
