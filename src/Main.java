@@ -2,9 +2,12 @@ public class Main {
     public static void main(String[] args) {
         int studentAge = 15;
         double studentGPA = 3.45;
-        char studentFirstInitial = 'R';
-        char studentLastInitial = 'H';
         boolean hasPerfectAttendance = true;
+
+        String studentFirstName = "Reisuke";
+        String studentLastName = "H";
+        char studentFirstInitial = studentFirstName.charAt(0);
+        char studentLastInitial = studentLastName.charAt(0);
         String studentName = "Reisuke H";
 
 
