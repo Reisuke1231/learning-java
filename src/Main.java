@@ -1,15 +1,10 @@
 public class Main {
     public  static void main(String[] args) {
-        Triangle triangleA = new Triangle(15, 8, 15, 8, 17);
-        Triangle triangleB = new Triangle(3, 2.598, 3, 3, 3);
+        StudentProfile profileOne = new StudentProfile("Sally", "Salmon", "Film", 3.75, 2022);
+        StudentProfile profileTwo = new StudentProfile("Max", "Tiffen", "Computer Science", 3.45, 2021);
 
-        double triangleAArea = triangleA.getArea();
-        System.out.println(triangleAArea);
-
-        double triangleBArea = triangleB.getArea();
-        System.out.println(triangleBArea);
-
-        System.out.println(Triangle.numOfSides);
+        profileTwo.incrementExpectedGraduationyear();
+        System.out.println(profileTwo.expectedYearTograduate);
     }
 
 }
